@@ -37,7 +37,7 @@ export default {
   background: linear-gradient(
     rgba(255,255,155, .45),
     rgba(0,200,0, .45)),
-    url("https://images.unsplash.com/photo-1534710961216-75c88202f43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80") center no-repeat;
+    url("https://images.unsplash.com/photo-1570142056130-9f6b59c6287a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80") center no-repeat;
     background-size: cover;
 }
 .content{

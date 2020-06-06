@@ -1,13 +1,14 @@
 <template>
-  <div class="container">
+  <div class="container container ">
     <nav class="navbar" :class="{ change : isActive }" @click=" isActive = !isActive">
       <div class="burger-menu">
         <div class="line line-1"></div>
         <div class="line line-2"></div>
         <div class="line line-3"></div>
       </div>
-
+ 
       <ul class="nav-list">
+        <div class="logo"><img src="https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_45,w_45,f_auto,q_auto/1386485/Logo_Le_ptit_jardinier.png_avec_carotte_o70ly3.png" alt=""></div>
         <router-link to="/" tag="li"  active-class="active" exact class="nav-item"><a class="nav-link">Home</a></router-link>
         <router-link to="/Why" tag="li"  active-class="active" exact class="nav-item"><a class="nav-link">Why?</a></router-link>
         <router-link to="/About" tag="li" active-class="active" class="nav-item"><a class="nav-link">About</a></router-link>
@@ -38,7 +39,7 @@ export default {
 .navbar{
   z-index: 1;
   width: 6rem;
-  height: 18rem;
+  height: 22rem;
   background-color: rgba(186, 218, 85, .55);
 
   position: fixed;
@@ -56,6 +57,9 @@ export default {
 
 }
 
+.logo>img{
+  padding-right: .5rem;
+  }
 /* Burgerrr */
 
   .burger-menu{
@@ -71,6 +75,7 @@ export default {
     right: 1rem;
     cursor: pointer;
   }
+
   .line{
     width: 100%;
     height: 3px;
@@ -94,9 +99,9 @@ export default {
 /* nav */
 
   .nav-list{
-    text-align: left;
+    text-align: right;
     width: 100%;
-    padding-left: 1.3rem;
+    padding-right: .5rem;
   }
   .nav-item{
     display: flex;
@@ -138,7 +143,7 @@ export default {
   }
 
   .nav-link:hover{
-    color: #2c3e50 ;
+    color: rgb(255, 161, 20) ;
     
   }
 
@@ -148,10 +153,80 @@ export default {
 
   .active>a{
     background: white;
-    color: #BADA55;
-    padding: .2rem 1rem;
+    color: rgb(255, 161, 20);
+    
     max-width: 100%;
 
   }
+   @media screen and (min-width: 400px) {
+  .navbar{
+  z-index: 1;
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(186, 218, 85, .55);
 
+  position: fixed;
+  top:0;
+  left:0;
+
+  display: flex;
+  
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 0 0 0 0;
+
+  transition: right .8s cubic-bezier(1,0,0,1);
+
+  box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+  .logo{
+    position: absolute;
+    top: 0;
+    left:1rem;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .nav-list{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    
+   
+  }
+  .nav-item{
+    width: 2rem;
+    
+    list-style: none;
+    margin: 1rem 0;
+    min-width: 5rem;
+    
+    
+  }
+  .nav-link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    font-size: .75rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 300;
+    position: relative;
+    padding: 3px 0;
+
+  }
+  .nav-link::before, .nav-link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left:0;
+    transform: scaleX(0) ;
+    transition: all 0.5s;
+  }
+}
 </style>

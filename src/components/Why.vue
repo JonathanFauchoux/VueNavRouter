@@ -38,14 +38,18 @@ export default {
 }
 .toContactBtn{
   
-  padding: 1rem 2rem;
+  padding: .7rem 1.5rem;
   border: 1px solid white;
   border-radius: 1rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;;
   color: white;
-  background-color: rgba(186, 218, 85, .55);
+  background-color: rgb(255, 161, 20);
+  cursor: pointer;
 }
-
+.toContactBtn:hover{
+  background-color: white;
+  color: rgb(255, 161, 20);
+}
 </style>
