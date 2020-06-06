@@ -158,7 +158,7 @@ export default {
     max-width: 100%;
 
   }
-   @media screen and (min-width: 768px) {
+   @media screen and (min-width: 769px) {
   .navbar{
   z-index: 1;
   width: 100%;
