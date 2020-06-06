@@ -5,7 +5,7 @@
       <h2 class="title">Why?</h2>
       <p>Lorem ipsum dolor sit amet consectetur.</p>
     </div>
-    <Button @click="navigateToHome">Contact Me!</Button>
+    <a class="toContactBtn" @click="navigateToHome">Contact Me!</a>
   </div>
 </template>
 
@@ -31,13 +31,21 @@ export default {
   flex-direction: column ;
   align-items: center;;
   width: 100%;
-  margin-bottom: 5rem;
+  
 }
 .why__head{
   padding: 5rem;
 }
-button{
-  width: 5rem;
+.toContactBtn{
+  
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;;
+  color: white;
+  background-color: rgba(186, 218, 85, .55);
 }
 
 </style>

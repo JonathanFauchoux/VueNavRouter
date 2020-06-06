@@ -36,12 +36,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
 .navbar{
-  width: 100px;
-  height: 100%;
-  background-color: #BADA55;
+  z-index: 1;
+  width: 6rem;
+  height: 18rem;
+  background-color: rgba(186, 218, 85, .55);
 
   position: fixed;
-  top: 0;
+  top:10%;
   right: -360px;
 
   display: flex;
@@ -99,10 +100,11 @@ export default {
     list-style: none;
     margin: 1rem;
     
+    
   }
   .nav-link{
     text-decoration: none;
-    font-size: .75rem;
+    font-size: .70rem;
     text-transform: uppercase;
     color: white;
     font-weight: 300;

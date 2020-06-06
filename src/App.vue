@@ -31,17 +31,17 @@ export default {
 }
 #app {
   z-index: -1;
-  color: #2c3e50;
+  color: White;
   width: 100%;
   height: 100vh;
   background: linear-gradient(
-    rgba(255,255,55, .75),
-    rgba(0,200,0, .25)),
-    url("https://picsum.photos/1920/1028?random1'") center no-repeat;
+    rgba(255,255,155, .45),
+    rgba(0,200,0, .45)),
+    url("https://images.unsplash.com/photo-1534710961216-75c88202f43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80") center no-repeat;
     background-size: cover;
 }
 .content{
-  height: 100%;
+ 
   display: flex;
   align-items: center;
 }
@@ -49,8 +49,13 @@ export default {
 .container{
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  
   width: 100%;
+  height: 100%;
   
 }
 /* Transition */
