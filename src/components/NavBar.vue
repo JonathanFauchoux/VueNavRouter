@@ -94,17 +94,22 @@ export default {
 /* nav */
 
   .nav-list{
-    text-align: right;
+    text-align: left;
+    width: 100%;
+    padding-left: 1.3rem;
   }
   .nav-item{
+    display: flex;
     list-style: none;
-    margin: 1rem;
+    margin: 1rem 0;
+    min-width: 100%;
     
     
   }
   .nav-link{
     text-decoration: none;
-    font-size: .70rem;
+    width: 100%;
+    font-size: .75rem;
     text-transform: uppercase;
     color: white;
     font-weight: 300;
@@ -144,7 +149,9 @@ export default {
   .active>a{
     background: white;
     color: #BADA55;
-    padding: .2rem .3rem;
+    padding: .2rem 1rem;
+    max-width: 100%;
+
   }
 
 </style>
